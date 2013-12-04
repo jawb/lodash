@@ -7176,7 +7176,7 @@
       freeExports._ = _;
     }
   }
-  else if (!!process) {
+  else if (typeof process == "object") {
     // in node-webkit
     if (!!process.versions['node-webkit']) window._ = _;
   }
